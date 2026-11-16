@@ -1,7 +1,8 @@
 (function () {
   "use strict";
 
-  document.body.classList.add("js-ready");\n  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.body.classList.add("js-ready");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const header = document.getElementById("siteHeader");
   const progress = document.getElementById("scrollProgress");
   const nav = document.getElementById("mainNav");
@@ -45,8 +46,6 @@
         deleting = true;
         timer = window.setTimeout(type, 1500);
       }, 1800);
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) window.clearTimeout(timer);
       });
     }
   }
