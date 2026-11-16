@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.body.classList.add("js-ready");\n  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const header = document.getElementById("siteHeader");
   const progress = document.getElementById("scrollProgress");
   const nav = document.getElementById("mainNav");
