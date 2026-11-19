@@ -432,6 +432,105 @@
     @media(max-width:900px){.archive-grid,.web-app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.findit-overview{grid-template-columns:1fr}.project{grid-template-columns:45px 1fr minmax(150px,28%)}}
     @media(max-width:620px){:root{--page-pad:22px}.section{padding-top:85px;padding-bottom:85px}.hero{padding-top:130px}.hero h1{font-size:clamp(58px,15vw,100px)}.hero-bottom{font-size:8px}.hero-bottom span:nth-child(2){display:none}.stats{gap:18px}.stat strong{font-size:32px}.stat span{font-size:10px}.archive-top,.skills-intro,.projects-heading{align-items:flex-start;flex-direction:column}.archive-grid,.skills-grid,.web-app-grid{grid-template-columns:1fr}.archive-card{min-height:170px}.skill-card{min-height:205px}.project{grid-template-columns:35px 1fr;gap:14px}.project-visual{grid-column:2;height:155px;width:100%}.findit-overview{padding:24px 18px}.findit-preview{padding:7px}.preview-body{grid-template-columns:65px 1fr}.preview-side{padding:14px 9px}.preview-main{padding:20px 14px}.preview-items i{width:40px}.contact h2{font-size:clamp(58px,15vw,100px)}footer{gap:12px;flex-wrap:wrap}.theme-toggle{padding:10px 12px}.theme-toggle span{display:inline}}
 
+  
+    /* Refined light theme: warm paper, sage, sand and soft lavender. */
+    body[data-theme="light"] {
+      --bg: #f1eee5;
+      --panel: #e7ebe1;
+      --panel-2: #e3e8dc;
+      --text: #202a24;
+      --muted: #68756a;
+      --line: rgba(43, 61, 48, .16);
+      --accent: #587d4b;
+      --accent-2: #8b765d;
+      color-scheme: light;
+      background:
+        radial-gradient(ellipse at 8% 14%, rgba(188, 205, 174, .34), transparent 32%),
+        radial-gradient(ellipse at 92% 38%, rgba(225, 198, 177, .27), transparent 30%),
+        #f1eee5;
+      color: var(--text);
+    }
+    body[data-theme="light"] .topbar {
+      background: rgba(241, 238, 229, .88);
+      border-bottom-color: rgba(43, 61, 48, .12);
+    }
+    body[data-theme="light"] .theme-toggle,
+    body[data-theme="light"] .menu-toggle {
+      background: #e4e9df;
+      border-color: rgba(68, 91, 67, .2);
+      color: #26372a;
+    }
+    body[data-theme="light"] .menu { background: rgba(237, 237, 226, .98); }
+    body[data-theme="light"] .menu a { color: #26372a; }
+    body[data-theme="light"] .hero-grid {
+      opacity: .2;
+      background-image:
+        linear-gradient(rgba(70, 91, 69, .1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(70, 91, 69, .1) 1px, transparent 1px);
+    }
+    body[data-theme="light"] .hero::before {
+      background: radial-gradient(ellipse at 72% 30%, rgba(202, 216, 185, .5), transparent 48%);
+    }
+    body[data-theme="light"] .section:nth-of-type(even) {
+      background: linear-gradient(115deg, rgba(224, 231, 218, .56), rgba(241, 238, 229, .12) 72%);
+    }
+    body[data-theme="light"] .archive-card,
+    body[data-theme="light"] .skill-card,
+    body[data-theme="light"] .web-app {
+      background: linear-gradient(145deg, #e8ede3, #f4eee4);
+      border-color: rgba(69, 91, 68, .17);
+      box-shadow: 0 14px 38px rgba(63, 75, 57, .055);
+    }
+    body[data-theme="light"] .archive-card:nth-child(3n + 2),
+    body[data-theme="light"] .web-app:nth-child(3n + 2) {
+      background: linear-gradient(145deg, #f0e6dc, #e9e8dc);
+    }
+    body[data-theme="light"] .archive-card small,
+    body[data-theme="light"] .web-app p { color: #68756a; }
+    body[data-theme="light"] .skill-chips span {
+      color: #354b39;
+      background: #dfe8d9;
+      border-color: #cbd8c4;
+    }
+    body[data-theme="light"] .findit-overview {
+      background:
+        radial-gradient(circle at 94% 8%, rgba(164, 187, 143, .34), transparent 34%),
+        radial-gradient(circle at 8% 100%, rgba(225, 190, 166, .28), transparent 38%),
+        linear-gradient(120deg, #e3e9dc, #eee9df 72%);
+      border-color: rgba(82, 111, 76, .24);
+    }
+    body[data-theme="light"] .findit-preview {
+      background: linear-gradient(145deg, #dce6d6, #e9e1d7);
+      border-color: rgba(65, 83, 60, .2);
+    }
+    body[data-theme="light"] .findit-copy p,
+    body[data-theme="light"] .hero-desc,
+    body[data-theme="light"] .about-copy p,
+    body[data-theme="light"] .contact-bottom p { color: #59685d; }
+    body[data-theme="light"] .project-visual {
+      background: linear-gradient(145deg, #e1e8dc, #e9dfd4);
+      border-color: rgba(69, 91, 68, .17);
+    }
+    body[data-theme="light"] .project-tags span {
+      color: #58685a;
+      background: rgba(221, 230, 215, .8);
+    }
+    body[data-theme="light"] .contact {
+      background:
+        radial-gradient(ellipse at 78% 85%, rgba(191, 207, 174, .4), transparent 42%),
+        radial-gradient(ellipse at 10% 12%, rgba(230, 203, 184, .3), transparent 35%);
+    }
+    body[data-theme="light"] footer { color: #68756a; }
+    body[data-theme="light"] .btn {
+      background: #e2e9dc;
+      border-color: rgba(69, 91, 68, .25);
+      color: #26372a;
+    }
+    body[data-theme="light"] .btn:hover {
+      background: #d2dfca;
+      border-color: #829a76;
+    }
+
   </style>
 </head>
 <body>
