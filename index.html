@@ -288,6 +288,150 @@
     body[data-theme="light"]{--bg:#f4f5f2;--panel:#fff;--panel-2:#e9eee9;--text:#17201c;--muted:#64716a;--line:rgba(23,32,28,.15);--accent:#287b60;--accent-2:#287b60;color-scheme:light}body[data-theme="light"] .topbar{background:rgba(244,245,242,.82);backdrop-filter:blur(14px)}body[data-theme="light"] .menu{background:rgba(244,245,242,.98)}body[data-theme="light"] .menu-toggle,body[data-theme="light"] .theme-toggle{background:rgba(255,255,255,.85);color:var(--text)}body[data-theme="light"] .hero-grid{opacity:.08;background-image:linear-gradient(rgba(0,0,0,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.08) 1px,transparent 1px)}body[data-theme="light"] .hero-desc,body[data-theme="light"] .about-copy p{color:#59665f}body[data-theme="light"] .section-title .outline{-webkit-text-stroke-color:rgba(23,32,28,.55)}body[data-theme="light"] .about-art{background:linear-gradient(145deg,#dce9e2,#f1f4f0 60%,#e4ece6)}body[data-theme="light"] .skill-card,body[data-theme="light"] .archive-card,body[data-theme="light"] .web-app{background:#fff}body[data-theme="light"] .skill-chips span{color:#263b31;background:#edf5f0;border-color:#d6e5dc}body[data-theme="light"] .project-info p,body[data-theme="light"] .step p{color:#64716a}body[data-theme="light"] footer{color:#68746d}
     @media(max-width:800px){.archive-grid,.web-app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.findit-overview{grid-template-columns:1fr}}@media(max-width:560px){.skills-grid,.archive-grid,.web-app-grid{grid-template-columns:1fr}.archive-top{align-items:flex-start;flex-direction:column}.theme-toggle{padding:9px 10px}.theme-toggle span{display:none}.findit-preview{padding:8px}.preview-body{grid-template-columns:65px 1fr}.preview-side{padding:12px 8px}.preview-main{padding:18px 15px}}
 
+
+    /* ===== PREMIUM VISUAL REFINEMENT ===== */
+    :root{
+      --bg:#090d0c;--panel:#111816;--panel-2:#17211d;--text:#f2f5ef;--muted:#9ba8a0;
+      --line:rgba(230,245,235,.13);--accent:#c4f36b;--accent-2:#d6ff8a;
+      --page-pad:clamp(22px,8vw,132px);--font:"Manrope",sans-serif;--mono:"DM Mono",monospace;
+    }
+    html,body{background:var(--bg);color:var(--text)}
+    body{font-feature-settings:"ss01" on}
+    .topbar{padding-top:24px;padding-bottom:24px}
+    .brand{font-size:14px;letter-spacing:-.06em}
+    .brand span{color:var(--accent)}
+    .theme-toggle,.menu-toggle{border:1px solid var(--line);background:rgba(12,18,15,.76);color:var(--text);border-radius:100px;padding:11px 16px;font:10px var(--mono);letter-spacing:.12em;transition:.25s}
+    .theme-toggle:hover,.menu-toggle:hover{background:var(--accent);border-color:var(--accent);color:#10150d}
+    .topbar-actions{display:flex;align-items:center;gap:9px;pointer-events:auto}
+    .menu{background:rgba(8,13,11,.98);backdrop-filter:blur(20px)}
+    .menu a{font-size:clamp(36px,7vw,76px);letter-spacing:-.075em}
+    .menu a span{color:var(--accent)}
+    .section{padding-top:clamp(88px,10vw,148px);padding-bottom:clamp(88px,10vw,148px)}
+    .eyebrow,.skill-index{color:var(--accent);font-size:10px;letter-spacing:.17em}
+    .section-title{font-size:clamp(48px,8vw,112px);line-height:.91;letter-spacing:-.09em}
+    .section-title .outline{ -webkit-text-stroke:1px rgba(242,245,239,.52)}
+    .hero{min-height:100svh;padding-top:150px;padding-bottom:130px}
+    .hero-bg{width:min(75vw,1000px);right:-18%;top:-2%;background:radial-gradient(circle,rgba(153,210,93,.17),rgba(47,88,53,.08) 42%,transparent 70%)}
+    .hero-grid{opacity:.14;background-size:92px 92px;background-image:linear-gradient(rgba(221,244,222,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(221,244,222,.055) 1px,transparent 1px)}
+    .hero-kicker{margin-bottom:34px}
+    .status-dot{background:var(--accent);box-shadow:0 0 18px rgba(196,243,107,.65)}
+    .hero h1{font-size:clamp(62px,13vw,184px);letter-spacing:-.105em;line-height:.79}
+    .hero h1 .blue{color:var(--accent)}
+    .hero-desc{color:#b5c0b8;max-width:500px;margin-top:38px;line-height:1.9}
+    .hero-cta{gap:10px;margin-top:34px}
+    .btn{border-radius:100px;padding:14px 21px;border-color:var(--line);font-size:12px;letter-spacing:-.01em}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:#10150d}
+    .btn:hover{transform:translateY(-3px);border-color:var(--accent);background:rgba(196,243,107,.1);color:var(--accent)}
+    .btn.primary:hover{background:var(--accent-2);color:#10150d}
+    .stats{border-color:var(--line);gap:clamp(24px,5vw,70px)}
+    .stat strong{font-size:clamp(34px,4vw,52px);color:var(--text)}
+    .stat span{font-size:11px;letter-spacing:.02em}
+    .hero-bottom{color:#77847b;font-size:9px}
+    .scroll-cue i{background:var(--accent)}
+    .archive-feature{background:linear-gradient(180deg,rgba(196,243,107,.035),transparent 72%);border-top:1px solid rgba(196,243,107,.08);border-bottom:1px solid rgba(196,243,107,.08)}
+    .archive-top{align-items:end}
+    .archive-intro{font-size:14px;max-width:570px;line-height:1.9;color:var(--muted);margin:28px 0 42px}
+    .text-link{color:var(--accent);border-color:rgba(196,243,107,.45);font-size:9px}
+    .archive-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .archive-card{position:relative;min-height:205px;padding:25px 25px 22px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#141d18,#0e1512);transition:transform .35s,border-color .35s,background .35s}
+    .archive-card:before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at 100% 0,rgba(196,243,107,.09),transparent 48%);pointer-events:none}
+    .archive-card:hover{transform:translateY(-6px);border-color:rgba(196,243,107,.55);background:#17221b}
+    .archive-card>span,.web-app>span{color:var(--accent);font-size:9px;letter-spacing:.15em}
+    .archive-card strong{font-size:21px;letter-spacing:-.055em;margin:28px 0 8px}
+    .archive-card small{font-size:11px;color:#9ca9a0;line-height:1.65}
+    .archive-card b{color:var(--accent);font-size:9px;letter-spacing:.08em}
+    .about{gap:clamp(45px,8vw,120px)}
+    .about-copy p{color:#aebbb2;line-height:1.95}
+    .about-art{border-radius:18px;background:radial-gradient(circle at 50% 45%,#243c2c,#111a15 62%,#0d120f);border:1px solid rgba(196,243,107,.16)}
+    .about-art:before,.about-art:after{border-color:rgba(196,243,107,.28)}
+    .art-core{background:radial-gradient(circle at 35% 30%,#e7ffb6,#b6e65e 34%,#355c2c 75%);color:#172111;box-shadow:0 0 90px rgba(174,224,92,.22)}
+    .art-label{color:#c5d9b5}
+    .skills{padding-top:clamp(90px,10vw,140px);padding-bottom:clamp(90px,10vw,140px)}
+    .skills-intro{margin-bottom:42px}
+    .skills-intro p{max-width:340px;font-size:13px;line-height:1.9}
+    .skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .skill-card{position:relative;min-height:235px;padding:clamp(23px,3vw,34px);border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,#151e19,#0e1512);overflow:hidden;transition:transform .35s,border-color .35s}
+    .skill-card:after{content:"";position:absolute;width:190px;height:190px;right:-95px;bottom:-120px;border-radius:50%;background:rgba(196,243,107,.09);filter:blur(24px);pointer-events:none}
+    .skill-card:hover{transform:translateY(-5px);border-color:rgba(196,243,107,.48)}
+    .skill-card h3{font-size:clamp(25px,3vw,37px);letter-spacing:-.07em;margin:30px 0 25px}
+    .skill-chips{gap:8px}
+    .skill-chips span{background:rgba(196,243,107,.055);border:1px solid rgba(196,243,107,.17);color:#dce8d8;padding:9px 12px;font-size:10px;border-radius:7px}
+    .journey{border-top:1px solid var(--line)}
+    .timeline-line i{background:var(--accent)}
+    .step-kind{color:var(--accent);font:10px var(--mono);letter-spacing:.12em}
+    .step h3{font-size:clamp(22px,3vw,34px);letter-spacing:-.055em}
+    .step p{color:var(--muted);line-height:1.85}
+    .projects{padding-top:clamp(95px,10vw,145px)}
+    .projects-heading{margin-bottom:52px}
+    .projects-heading p{max-width:340px;line-height:1.9}
+    .findit-overview{position:relative;grid-template-columns:.82fr 1.18fr;gap:clamp(25px,5vw,65px);padding:clamp(28px,5vw,65px);border-radius:18px;border:1px solid rgba(196,243,107,.2);background:radial-gradient(circle at 95% 5%,rgba(196,243,107,.12),transparent 35%),linear-gradient(120deg,#17251b,#0d1511 72%);box-shadow:0 24px 90px rgba(0,0,0,.22);transition:transform .35s,border-color .35s}
+    .findit-overview:hover{transform:translateY(-4px);border-color:rgba(196,243,107,.48)}
+    .findit-copy h3{font-size:clamp(48px,7vw,88px);letter-spacing:-.1em}
+    .findit-copy h3 em{color:var(--accent)}
+    .findit-copy p{font-size:13px;color:#b3c1b5;line-height:1.9;max-width:410px}
+    .findit-repo{color:var(--accent);font-size:9px;letter-spacing:.15em;border-bottom:1px solid rgba(196,243,107,.35);padding-bottom:9px}
+    .findit-preview{border:1px solid rgba(232,248,230,.17);border-radius:12px;padding:10px;background:rgba(5,10,7,.35);transform:rotate(.5deg);box-shadow:0 18px 60px rgba(0,0,0,.28)}
+    .preview-window{border-radius:7px;min-height:280px;background:#f4f7f1}
+    .preview-bar{background:#e7ede4;height:38px}
+    .preview-body{min-height:242px;grid-template-columns:100px 1fr}
+    .preview-side{background:#14231a;padding:20px 14px;gap:20px}
+    .preview-main{padding:28px 30px}
+    .preview-main small{color:#638b45}
+    .preview-main strong{font-size:clamp(26px,4vw,47px);color:#18271b}
+    .preview-items i{width:52px;height:38px}
+    .preview-main label{color:#71816f}
+    .project-list{border-top:1px solid var(--line)}
+    .project{min-height:220px;grid-template-columns:65px 1fr minmax(210px,32%);gap:25px;padding:34px 0;border-color:var(--line)}
+    .project-no{color:var(--accent);font-size:10px}
+    .project-info h3{font-size:clamp(28px,4vw,49px);letter-spacing:-.075em}
+    .project-info p{font-size:12px;line-height:1.85}
+    .project-tags span{border-radius:5px;color:#c1d0c3;font-size:9px}
+    .project-link{color:var(--accent);font-size:9px}
+    .project-visual{height:170px;border-radius:10px;transform:none!important;background:linear-gradient(135deg,#202f23,#121a14)}
+    .project-visual.ai{background:linear-gradient(135deg,#1c3825,#111b14)}
+    .project-visual.web{background:linear-gradient(135deg,#302746,#171522)}
+    .project-visual:before{background:rgba(196,243,107,.16)}
+    .web-lab{border-top:1px solid var(--line)}
+    .web-app-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .web-app{position:relative;min-height:220px;padding:25px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(145deg,#151e19,#0e1512);transition:transform .35s,border-color .35s}
+    .web-app:before{content:"↗";position:absolute;right:22px;top:20px;color:#738174;font-size:15px;transition:.25s}
+    .web-app:hover{transform:translateY(-6px);border-color:rgba(196,243,107,.5)}
+    .web-app:hover:before{color:var(--accent);transform:translate(3px,-3px)}
+    .web-app b{font-size:22px;letter-spacing:-.06em;margin-top:35px}
+    .web-app p{font-size:11px;line-height:1.8;color:#9eaaa1}
+    .web-app i{color:var(--accent);font-size:9px}
+    #coursework{border-top:1px solid var(--line)}
+    #coursework .project-list{border-top:1px solid var(--line)}
+    #coursework .step{padding:23px 0;border-bottom:1px solid var(--line)}
+    #links{border-top:1px solid var(--line)}
+    #links .btn{display:inline-flex;align-items:center;gap:8px}
+    .contact{padding-top:clamp(100px,14vw,190px);padding-bottom:clamp(90px,12vw,150px);background:radial-gradient(ellipse at 80% 90%,rgba(196,243,107,.08),transparent 45%)}
+    .contact h2{font-size:clamp(64px,12vw,160px);line-height:.84;letter-spacing:-.105em}
+    .contact h2 span{color:var(--accent)}
+    .contact-bottom p{max-width:440px;color:#aab7ad;line-height:1.9;font-size:13px}
+    .contact-links a{color:var(--accent);border-bottom:1px solid rgba(196,243,107,.3);padding-bottom:8px;font:10px var(--mono);letter-spacing:.1em}
+    footer{border-top:1px solid var(--line);padding:25px var(--page-pad);color:#77847b;font:9px var(--mono);letter-spacing:.1em}
+    body[data-theme="light"]{--bg:#f5f6f0;--panel:#fff;--panel-2:#edf1e8;--text:#182018;--muted:#657166;--line:rgba(24,32,24,.14);--accent:#638c31;--accent-2:#557d29;color-scheme:light}
+    body[data-theme="light"] .topbar{background:rgba(245,246,240,.84);backdrop-filter:blur(18px)}
+    body[data-theme="light"] .theme-toggle,body[data-theme="light"] .menu-toggle{background:rgba(255,255,255,.82);color:#182018}
+    body[data-theme="light"] .menu{background:rgba(245,246,240,.98)}
+    body[data-theme="light"] .menu a{color:#182018}
+    body[data-theme="light"] .hero-desc,body[data-theme="light"] .about-copy p,body[data-theme="light"] .contact-bottom p{color:#59675b}
+    body[data-theme="light"] .hero-grid{opacity:.12;background-image:linear-gradient(rgba(20,40,20,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(20,40,20,.08) 1px,transparent 1px)}
+    body[data-theme="light"] .section-title .outline{ -webkit-text-stroke-color:rgba(24,32,24,.5)}
+    body[data-theme="light"] .archive-card,body[data-theme="light"] .skill-card,body[data-theme="light"] .web-app{background:linear-gradient(145deg,#fff,#f3f6ef)}
+    body[data-theme="light"] .archive-card small,body[data-theme="light"] .web-app p{color:#667365}
+    body[data-theme="light"] .skill-chips span{color:#34442e;background:#eef4e7;border-color:#d8e4cc}
+    body[data-theme="light"] .findit-overview{background:radial-gradient(circle at 95% 5%,rgba(99,140,49,.12),transparent 35%),linear-gradient(120deg,#e6efdf,#f5f7f1 72%);border-color:rgba(99,140,49,.25)}
+    body[data-theme="light"] .findit-copy p{color:#536451}
+    body[data-theme="light"] .findit-preview{background:#e3eade;border-color:rgba(40,60,30,.15)}
+    body[data-theme="light"] .project-tags span{color:#536451}
+    body[data-theme="light"] .project-info p,body[data-theme="light"] .step p{color:#657166}
+    body[data-theme="light"] .contact{background:radial-gradient(ellipse at 80% 90%,rgba(99,140,49,.1),transparent 45%)}
+    body[data-theme="light"] footer{color:#657166}
+    @media(max-width:900px){.archive-grid,.web-app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.findit-overview{grid-template-columns:1fr}.project{grid-template-columns:45px 1fr minmax(150px,28%)}}
+    @media(max-width:620px){:root{--page-pad:22px}.section{padding-top:85px;padding-bottom:85px}.hero{padding-top:130px}.hero h1{font-size:clamp(58px,15vw,100px)}.hero-bottom{font-size:8px}.hero-bottom span:nth-child(2){display:none}.stats{gap:18px}.stat strong{font-size:32px}.stat span{font-size:10px}.archive-top,.skills-intro,.projects-heading{align-items:flex-start;flex-direction:column}.archive-grid,.skills-grid,.web-app-grid{grid-template-columns:1fr}.archive-card{min-height:170px}.skill-card{min-height:205px}.project{grid-template-columns:35px 1fr;gap:14px}.project-visual{grid-column:2;height:155px;width:100%}.findit-overview{padding:24px 18px}.findit-preview{padding:7px}.preview-body{grid-template-columns:65px 1fr}.preview-side{padding:14px 9px}.preview-main{padding:20px 14px}.preview-items i{width:40px}.contact h2{font-size:clamp(58px,15vw,100px)}footer{gap:12px;flex-wrap:wrap}.theme-toggle{padding:10px 12px}.theme-toggle span{display:inline}}
+
   </style>
 </head>
 <body>
@@ -309,6 +453,7 @@
       <a href="#projects"><span>06</span>Projects</a>
       <a href="#web-lab"><span>07</span>Web Projects</a>
       <a href="#links"><span>08</span>Links</a>
+      <a href="#contact"><span>09</span>Contact</a>
     </nav>
   </div>
 
@@ -339,14 +484,14 @@
         </div>
       </div>
       <div class="hero-bottom">
-        <span>Portfolio · 2026</span>
+        <span>PORTFOLIO · 2026</span>
         <span class="scroll-cue"><i></i> Scroll to explore</span>
-        <span>37°33' N · Seoul</span>
+        <span>GACHON UNIVERSITY · SOUTH KOREA</span>
       </div>
     </section>
 
     <section class="section archive-feature" id="course-archive">
-      <div class="archive-top"><div><div class="eyebrow" data-reveal>01 / Gachon University · Web Programming</div><h2 class="section-title" data-reveal>Course <span class="outline">archive.</span></h2></div><a class="text-link" href="https://alisherice.github.io/Web-Programming/" target="_blank" rel="noreferrer">Open full archive ↗</a></div>
+      <div class="archive-top"><div><div class="eyebrow" data-reveal>01 — GACHON UNIVERSITY / WEB PROGRAMMING</div><h2 class="section-title" data-reveal>Course <span class="outline">archive.</span></h2></div><a class="text-link" href="https://alisherice.github.io/Web-Programming/" target="_blank" rel="noreferrer">Open full archive ↗</a></div>
       <p class="archive-intro" data-reveal>A growing collection of weekly assignments, experiments and things I built while learning web development.</p>
       <div class="archive-grid">
         <a class="archive-card" href="https://alisherice.github.io/Web-Programming/Week%206/" target="_blank" rel="noreferrer"><span>WEEK 06</span><strong>JavaScript & APIs</strong><small>Weather · Countries · Pokémon · Random User</small><b>Explore week ↗</b></a>
@@ -423,7 +568,7 @@
     <section class="section projects" id="projects">
       <div class="projects-heading">
         <div>
-          <div class="eyebrow" data-reveal>05 / Selected projects</div>
+          <div class="eyebrow" data-reveal>05 / SELECTED PROJECTS</div>
           <h2 class="section-title" data-reveal>Things I've<br><span class="outline">built.</span></h2>
         </div>
         <p data-reveal>Experiments, coursework and products that turn what I'm learning into something real.</p>
@@ -434,27 +579,6 @@
         <div class="findit-preview" aria-hidden="true"><div class="preview-window"><div class="preview-bar"><i></i><i></i><i></i><span>FindIt AI · Lost & Found</span></div><div class="preview-body"><div class="preview-side"><b>FindIt<span>AI</span></b><i></i><i></i><i></i><i></i></div><div class="preview-main"><small>SMART LOST & FOUND</small><strong>Find what<br>you've lost.</strong><div class="preview-items"><i>⌕</i><i>▧</i><i>✦</i></div><label>AI-POWERED ITEM MATCHING</label></div></div></div></div>
       </a>
       <div class="project-list">
-          <div class="project-no">01 /</div>
-          <div class="project-info">
-            <h3>FindIt AI</h3>
-            <p>A smart lost-and-found concept exploring image-based item matching, shared reports and a practical search experience.</p>
-            <div class="project-tags"><span>React</span><span>TypeScript</span><span>Python</span><span>AI / Vision</span></div>
-            <a class="project-link" href="https://alisherice.github.io/FindIt-AI/" target="_blank" rel="noreferrer">Explore project ↗</a>
-          </div>
-          <div class="project-visual ai"><span>FIND<span style="color:#7ce0bd">IT</span> AI</span></div>
-        </article>
-
-        <article class="project">
-          <div class="project-no">02 /</div>
-          <div class="project-info">
-            <h3>Web Programming</h3>
-            <p>A collection of front-end coursework, interactive exercises, API experiments and responsive web interfaces.</p>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>APIs</span></div>
-            <a class="project-link" href="https://alisherice.github.io/Web-Programming/" target="_blank" rel="noreferrer">Explore project ↗</a>
-          </div>
-          <div class="project-visual web"><span>WEB<span style="color:#c7a5ff">/</span>LAB</span></div>
-        </article>
-
         <article class="project">
           <div class="project-no">03 /</div>
           <div class="project-info">
@@ -469,7 +593,7 @@
     </section>
 
     <section class="section web-lab" id="web-lab">
-      <div class="projects-heading"><div><div class="eyebrow" data-reveal>07 / What I did</div><h2 class="section-title" data-reveal>Web <span class="outline">projects.</span></h2></div><p data-reveal>Small applications where I practiced fetching data, building interfaces and making the web interactive.</p></div>
+      <div class="projects-heading"><div><div class="eyebrow" data-reveal>07 / WHAT I DID</div><h2 class="section-title" data-reveal>Web <span class="outline">projects.</span></h2></div><p data-reveal>Small applications where I practiced fetching data, building interfaces and making the web interactive.</p></div>
       <div class="web-app-grid">
         <a class="web-app" href="https://alisherice.github.io/Web-Programming/Week%207/book-search.html" target="_blank" rel="noreferrer"><span>01 / API APP</span><b>Book Search</b><p>Search for books and explore results from an external API.</p><i>Live demo ↗</i></a>
         <a class="web-app" href="https://alisherice.github.io/Web-Programming/Week%206/weather-api.html" target="_blank" rel="noreferrer"><span>02 / API APP</span><b>Weather App</b><p>Weather data presented in a clean, responsive interface.</p><i>Live demo ↗</i></a>
@@ -501,7 +625,7 @@
     </section>
     <!-- 05 / CONTACT -->
     <section class="section contact" id="contact">
-      <div class="eyebrow" data-reveal>10 / Have an idea?</div>
+      <div class="eyebrow" data-reveal>10 — HAVE AN IDEA?</div>
       <h2 data-reveal>Let's build<br><span>something.</span></h2>
       <div class="contact-bottom" data-reveal>
         <p>I'm always interested in learning, collaborating and building useful things. Email me at 202537098@gachon.ac.kr — let's build something meaningful together.</p>
